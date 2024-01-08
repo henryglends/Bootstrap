@@ -1,6 +1,6 @@
 # RootHide Bootstrap FAQ
 
-If you want something added/revised here, make an issue or a pull request.
+If you want something added/revised here, make a pull request or message me on Discord (@dleovl).
 
 DO NOT UPDATE YOUR PHONE NO MATTER WHAT!
 SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on daemons. Refer to the [RootHide Discord server](https://discord.com/invite/scqCkumAYp) for more information regarding the matter (and what you can do to make SpringBoard supported).
