@@ -1,137 +1,118 @@
-## dleovl says:
-This repository contains automatically built `.tipa` files of the [RootHide Bootstrap](https://github.com/RootHide/Bootstrap) thats pulled from upstream and built hourly. *This is the **ONLY** trustworthy repository that does this, until building is officially supported by the developer*. If this helped you, feel free to leave a star.
+# RootHide Bootstrap FAQ
 
-This repository is not affiliated with RootHide or its developers. You can download the `.tipa` by clicking [here](https://github.com/dleovl/Bootstrap/releases/download/release/Bootstrap.tipa). As this repository builds hourly, you may need to wait until the next build when a commit is pushed. Check the Actions tab to see when the last run was made. Building usually takes no more than five minutes.
+If you want something added/revised here, make an issue or a pull request.
+
+DO NOT UPDATE YOUR PHONE NO MATTER WHAT!
+SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on daemons. Refer to the [RootHide Discord server](https://discord.com/invite/scqCkumAYp) for more information regarding the matter (and what you can do to make SpringBoard supported).
+
+Always remember, **DO NOT INSTALL `.TIPA` BUILDS FROM OTHER PEOPLE.** You risk installing malicious code since the code used to build the official `.tipa` is open source (meaning anyone could've modified the code to be malicious) and you're potentially installing outdated Bootstrap versions which may not function properly nor will they recieve support.
+Don't run `rm -rf /var/`, it doesn't give you SpringBoard injection.
+
+[Join the RootHide Discord server](https://discord.com/invite/scqCkumAYp)!
+If you have an issue that isn't listed here, check the [issues](https://github.com/RootHide/Bootstrap/issues). If it's still not there, ask in the [RootHide Discord server](https://discord.com/invite/scqCkumAYp).
+This FAQ `README.md` will be consistently updated along with the [Bootstrap README fork](https://github.com/dleovl/Bootstrap/blob/readme/README.md).
 
 # Bootstrap
 
-[![GitHub stars](https://img.shields.io/github/stars/RootHide/Bootstrap?style=social)](https://github.com/RootHide/Bootstrap/stargazers)
+## Do I need TrollStore for this bootstrap?
+YES! No TrollStore = Unsupported. No ifs, ands, or buts.
+If you are on a supported version to install TrollStore, use [this guide](https://ios.cfw.guide/installing-trollstore/) to install TrollStore.
 
-A full featured bootstrap for iOS 14.0-17.0 A8-A17 & M1+M2. (Currently only tested tested on versions 15.0-17.0)
+## How do I build the RootHide Bootstrap? (No PC/Mac required)
+Check [here](https://discord.com/channels/1130859165942829106/1130859166488076331/1190488974528106607) for building with GitHub actions (must be in the [RootHide Discord server](https://discord.com/invite/scqCkumAYp), this is also good for getting really crucial information). This `.yml` doesn't automatically update to the latest commit when a new one comes out, so you'll need to sync your fork every time a commit is made (it'll automatically build within 5 minutes). **DO NOT** rely on other peoples `.tipa` files as they can be outdated or malicious. Automatic building repositories are **not** a requirement and only bloat up wherever you send them.
 
-##### *WARNING:* By using this software, you take full responsibility for what you do with it. Any modification to your device may cause irreparable damage to your device. The Bootstrap currently does not work on iOS 17.0 for A15+ devices.
+Got a Mac and wanna use Xcode? [Use this README](https://github.com/dleovl/Bootstrap/blob/main/README.md).
 
-## Building
+## Why does the bootstrap say wait for fix? (test UI)
+You are using an outdated leaked build. Please refer to this FAQ for proper instructions on how to update your bootstrap.
 
-You'll need MacOS to build, as you require Xcode. Simply having Xcode Command Line Tools is not sufficient.
+## Why shouldn't I use Zebra?
+It doesn't work well with rootless, please stick to Sileo. You can use whatever package manager you want, but if you have issues with installing packages in Zebra, it's because you're using Zebra. Switch to Sileo.
 
-You will need Homebrew installed. If you don't have Homebrew installed, run the following command: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+## How do I update the Bootstrap?
+For updating between beta versions, you may have to uninstall your bootstrap before updating.
 
- 1. Update your Theos to the RootHide build
-    
-    `bash -c "$(curl -fsSL https://raw.githubusercontent.com/roothide/theos/master/bin/install-theos)"`
-    
-    This build of Theos is consistently updated.
+You can export sources and tweaks in Sileo, preferences will be saved through uninstallation. ([@exact](https://github.com/exact))
 
- 2. Install make
+Uninstall the bootstrap in the app, install your new `.tipa`, reboot, and bootstrap.
 
-    `brew install make`
+## Why are notifications broken / apps always asking for permissions?
+Check out [issue #2](https://github.com/RootHide/Bootstrap/issues/2), this issue is already known. Disable and enable tweak injection to temporarily fix issue until next reboot.
 
- 3. Clone the GitHub repository and enter directory
+## How do I uninstall the Bootstrap?
+If you're uninstalling because of any bugs, let us know in the [GitHub issues](https://github.com/RootHide/Bootstrap/issues).
 
-    `git clone https://github.com/RootHide/Bootstrap/ && cd Bootstrap`
+You may want to backup your sources and tweaks. You can do this in Sileo by clicking the share button in the top-left corner of both the Sources and Installed tabs. You can copy and paste this list into your Notes app for safe-keeping.
+1. Disable EVERYTHING in AppEnabler.
+2. `(Optional, *please read in its entirety*)` If you're forever leaving the Bootstrap, open the RootHide application (`com.roothide.manager` in Sileo if it isn't installed, must be bootstrapped), click varClean from the bottom tabs, press 'Select All', and press 'Clean'. This will remove ALL jailbreak related files from `/var`. **You may experience issues with jailbreak detection in the future if you do not remove these files. Unfortunately, this may also remove files utilized by other TrollStore applications. Ensure not to remove these if you want to continue using them where they were left off.**
+4. Reboot your phone.
+5. Open Bootstrap and press uninstall.
 
- 4. Build `Bootstrap.tipa`
+Thank you for staying with us.
 
-    `gmake -j$(sysctl -n hw.ncpu) package`
+# Tweaks
 
- 5. Transfer `Bootstrap.tipa` from `./packages/` to your device and install it with TrollStore!
+## How do I get SpringBoard tweaks to work?
+There are tools you can use on top of RootHide Bootstrap for SpringBoard tweaks. You can find more information on the [RootHide Discord server](https://discord.com/invite/scqCkumAYp), in the `#faq` channel.
 
-## Usage
+## How do I convert tweaks?
+[Check my fork of the README](https://github.com/dleovl/Bootstrap/blob/main/README.md).
 
-The latest version of TrollStore is required as the bootstrap is built around the CoreTrust bug. Developer mode will need to be enabled to use this bootstrap. Follow [this guide](https://docs.expo.dev/guides/ios-developer-mode/) to enable developer mode. If you do not see the option to enable developer mode, you may need to first try sideloading an application (use AltStore or Sideloadly) and the option to enable developer mode will appear.
+## 'Not a rootless package' in RootHide Patcher
+By default, 'Using Rootless Compat Layer' is selected in the RootHide Patcher. To convert rootless tweaks, you can use this option (though you will need to install rootless-compat as a dependancy). Rootful tweaks can use 'Directly Convert Simple Tweaks' instead.
 
-Once you open the Bootstrap app, press Bootstrap. This will install the necessary apps and files. You need to reboot to be able to uninstall the bootstrap.
+## Cask 3 doesn't save settings!
+Install [this fixed .deb](https://cdn.discordapp.com/attachments/1153426136802529280/1190903773606973470/com.ryannair05.cask3_1.0.2_iphoneos-arm64e.deb) with Sileo (pre-converted) (you may need to be in the [RootHide Discord server](https://discord.com/invite/scqCkumAYp) for it to load)
 
-You can add various sources to Sileo or Zebra, and install tweaks. You may need to convert tweaks to be Bootstrap compatible.
+## Cask 3 doesn't work in Discord / other apps
+These apps will need to be decrypted and have an unsandbox entitlement like `get-task-allow` to allow the tweaks like Cask 3 to work. If this is too technical, ask in the [RootHide Discord](https://discord.com/invite/scqCkumAYp).
 
-By default, tweaks are not injected into any apps. To enable tweak injection, click AppEnabler in the Bootstrap app, and toggle on an app you want to enable your tweaks in. You *cannot* inject into SpringBoard (com.apple.springboard) or Photos (com.apple.mobileslideshow) at the moment.
+## '**tweakname** tweak doesn't work, why?'
+Some tweaks are currently not supported. This can either be due to lack of SpringBoard or daemon support, or a poorly written tweak that has manual paths.
+These are some examples of incompatible tweaks:
+- iCleaner (Pro): Support for daemons is required.
+- Crane (Lite): Support for daemons is required, though you can manage through Preferences if you are **100%** sure you know what you're doing. Follow [this guide](https://github.com/RootHide/Bootstrap/issues/11#issuecomment-1873340249) for instructions on how to use it within Preferences.
+- Aemulo: Support for daemons is required.
+- SnowBoard: Support for SpringBoard is required, though you can use SnowBoard UI extensions in applications.
+- Flex 3 Beta: This application breaks `com.apple.Preferences` when injected if you have it alongside PreferenceLoader. Use the [updated version](https://twitter.com/Dxcool223x/status/1741169030340243520).
+- iGameGod: Installing this tweak as an application (through Sileo) doesn't work because iGameGod only supports injection into 'User' applications. Use tweaks from [iOSGods](https://iosgods.com/) instead.
 
-## Develop tweaks
+Any tweaks that modify or depend on daemons, the homescreen, lockscreen, control center, statusbar, or [anything else SpringBoard related](https://iphonedev.wiki/SpringBoard) will currently not function by *any* official means.
 
-Normal rootless tweaks aren't out-of-the-box compatible with this bootstrap, so you'll need to develop them specifically to support it. You can refer to the developer documentation [here](https://github.com/RootHide/Developer).
+## How do I change tweak settings?
+You have two solutions:
 
-## Install tweaks
+1. Enable injection into com.apple.Preferences (please be wary that you are injecting into a system application, do this at your own risk) and install PreferenceLoader along with a tweak that has a preference bundle.
+2. Use TweakSettings by CreatureSurvive on the [CreatureSurvive repository](https://creaturecoding.com/repo/) and respring for it to show up. **This is the safest alternative to people who DO NOT want to inject into system applications.**
 
-Bootstrap can enable tweaks for almost all apps, but it currently does not *yet* support SpringBoard tweaks, meaning you cannot modify the homescreen, lockscreen, control center, statusbar, or anything related to the SpringBoard. While these tweaks are installable, you cannot enable SpringBoard in AppEnabler.
+# Technical
 
-When installing a tweak, you might see a message saying 'Not Updated'. This tweak will need to be updated to support Bootstrap.
+## Why do applications claim I'm still jailbroken?
+Coming from a previous jailbreak, refer to #2 in the uninstallation guide in this FAQ to remove all jailbreak related files in `/var`.
 
-Install RootHide Patcher from *Sileo*. If you have problems installing, you're using Zebra, and need to switch to Sileo. When attempting to install a tweak, press 'Convert'. In the share sheet, press the Patcher app. When you convert a tweak to be Bootstrap compatible, you're given the option to directly convert simple tweaks or use rootless compat layer. If a tweak doesn't work with directly converting, try the rootless compat layer. You will need to install rootless-compat as a dependancy. Once the tweak is converted, press Ok and click Sileo in the share sheet. Press GET on the tweak and run the queue.
+**Do not install Filza from RootHide's repository in Sileo.** If you installed Filza through TrollStore, replace it with the [no URL scheme version](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa).
 
-You will need to enable Settings (com.apple.Preferences) in AppEnabler to have tweak preferences show up in the Settings app, or download TweakSettings from CreatureSurvive. If an application disappears (like after a bootstrap uninstall) and is supposed to be on your homescreen, open TrollStore settings and press 'Rebuild Icon Cache'.
+If your application still persists, attempt to uninstall it completely (disable injection first) and reinstall from the App Store.
 
-## Discord
+You can report bad applications in [issue #48](https://github.com/RootHide/Bootstrap/issues/48), please comment the link to the App Store landing page and how to reproduce the jailbreak detection warning (do you need to login?)
 
-You can join our Discord for support or general talk [here](https://discord.com/invite/scqCkumAYp).
+## Can I use JIT?
+JIT by default works with applications specifically made to support JIT provided by TrollStore, but you can enable JIT for outdated applications by using the bootstrap if you don't want to inject with [TrollStoreJitEnabler](https://github.com/Rednick16/TrollStoreJitEnabler). Enabling injection into applications that require JIT with AppEnabler will allow JIT to be utilized.
 
-## Credits
+# Other
 
-Huge thanks to these people, we couldn't have completed this project without their help!
+## Why don't my apps say 'Open' in the App Store?
+Applications injected in AppEnabler will not show up in the App Store. **DO NOT** click the cloud download button unless you **100%** know what you're doing.
+To get it to say 'Open' again, disable injection in AppEnabler, and refresh icon cache in TrollStore.
 
-- absidue: [https://github.com/absidue](https://github.com/absidue)
-- akusio: [https://twitter.com/akusio_rr](https://twitter.com/akusio_rr)
-- Alfie: [https://alfiecg.uk](https://alfiecg.uk)
-- Amy While: [http://github.com/elihwyma](http://github.com/elihwyma)
-- Barron: [https://tweaksdev22.github.io](https://tweaksdev22.github.io)
-- BomberFish: [https://twitter.com/bomberfish77](https://twitter.com/bomberfish77)
-- bswbw: [https://twitter.com/bswbw](https://twitter.com/bswbw)
-- Capt Inc: [http://github.com/captinc](http://github.com/captinc)
-- CKatri: [https://procursus.social/@cameron](https://procursus.social/@cameron)
-- Clarity: [http://github.com/TheRealClarity](http://github.com/TheRealClarity)
-- Cryptic: [http://github.com/Cryptiiiic](http://github.com/Cryptiiiic)
-- dxcool223x: [https://twitter.com/dxcool223x](https://twitter.com/dxcool223x)
-- Dhinakg: [http://github.com/dhinakg](http://github.com/dhinakg)
-- DuyKhanhTran: [https://twitter.com/TranKha50277352](https://twitter.com/TranKha50277352)
-- dleovl: [https://github.com/dleovl](https://github.com/dleovl)
-- Elias Sfeir: [https://twitter.com/eliassfeir1](https://twitter.com/eliassfeir1)
-- Ellie: [https://twitter.com/elliessurviving](https://twitter.com/elliessurviving)
-- EquationGroups: [https://twitter.com/equationgroups](https://twitter.com/equationgroups)
-- Évelyne: [http://github.com/evelyneee](http://github.com/evelyneee)
-- GeoSnOw: [https://twitter.com/fce365](https://twitter.com/fce365)
-- G3n3sis: [https://twitter.com/G3nNuk_e](https://twitter.com/G3nNuk_e)
-- hayden: [https://procursus.social/@hayden](https://procursus.social/@hayden)
-- Huy Nguyen: [https://twitter.com/little_34306](https://twitter.com/little_34306)
-- iAdam1n: [https://twitter.com/iAdam1n](https://twitter.com/iAdam1n)
-- iarrays: [https://iarrays.com](https://iarrays.com)
-- iDownloadBlog: [https://twitter.com/idownloadblog](https://twitter.com/idownloadblog)
-- iExmo: [https://twitter.com/iexmojailbreak](https://twitter.com/iexmojailbreak)
-- iRaMzi: [https://twitter.com/iramzi7](https://twitter.com/iramzi7)
-- Jonathan: [https://twitter.com/jontelang](https://twitter.com/jontelang)
-- Kevin: [https://github.com/iodes](https://github.com/iodes)
-- kirb: [http://github.com/kirb](http://github.com/kirb)
-- laileld: [https://twitter.com/h_h_x_t](https://twitter.com/h_h_x_t)
-- Leptos: [https://github.com/leptos-null](https://github.com/leptos-null)
-- limneos: [https://twitter.com/limneos](https://twitter.com/limneos)
-- Lightmann: [https://github.com/L1ghtmann](https://github.com/L1ghtmann)
-- Linus Henze: [http://github.com/LinusHenze](http://github.com/LinusHenze)
-- MasterMike: [https://ios.cfw.guide](https://ios.cfw.guide)
-- Misty: [https://twitter.com/miscmisty](https://twitter.com/miscmisty)
-- Muirey03: [https://twitter.com/Muirey03](https://twitter.com/Muirey03)
-- Nathan: [https://github.com/verygenericname](https://github.com/verygenericname)
-- Nebula: [https://itsnebula.net](https://itsnebula.net)
-- niceios: [https://twitter.com/niceios](https://twitter.com/niceios)
-- Nightwind: [https://twitter.com/NightwindDev](https://twitter.com/NightwindDev)
-- Nick Chan: [https://nickchan.lol](https://nickchan.lol)
-- nzhaonan: [https://twitter.com/nzhaonan](https://twitter.com/nzhaonan)
-- omrkujman: [https://twitter.com/omrkujman](https://twitter.com/omrkujman)
-- opa334: [http://github.com/opa334](http://github.com/opa334)
-- onejailbreak: [https://twitter.com/onejailbreak_](https://twitter.com/onejailbreak_)
-- Phuc Do: [https://twitter.com/dobabaophuc](https://twitter.com/dobabaophuc)
-- PoomSmart: [https://twitter.com/poomsmart](https://twitter.com/poomsmart)
-- ProcursusTeam: [https://procursus.social/@team](https://procursus.social/@team)
-- roothide: [http://github.com/RootHide](http://github.com/RootHide)
-- Sam Bingner: [http://github.com/sbingner](http://github.com/sbingner)
-- Shadow-: [http://iosjb.top/](http://iosjb.top/)
-- Snail: [https://twitter.com/somnusix](https://twitter.com/somnusix)
-- SquidGesture: [https://twitter.com/lclrc](https://twitter.com/lclrc)
-- sourcelocation: [http://github.com/sourcelocation](http://github.com/sourcelocation)
-- SeanIsTethered: [http://github.com/jailbreakmerebooted](https://github.com/jailbreakmerebooted)
-- TheosTeam: [https://theos.dev](https://theos.dev)
-- tigisoftware: [https://twitter.com/tigisoftware](https://twitter.com/tigisoftware)
-- tihmstar: [https://twitter.com/tihmstar](https://twitter.com/tihmstar)
-- xina520: [https://twitter.com/xina520](https://twitter.com/xina520)
-- xybp888: [https://twitter.com/xybp888](https://twitter.com/xybp888)
-- xsf1re: [https://twitter.com/xsf1re](https://twitter.com/xsf1re)
-- yandevelop: [https://twitter.com/yandevelop](https://twitter.com/yandevelop)
-- YourRepo: [https://twitter.com/yourepo](https://twitter.com/yourepo)
+## How do I disable OTA updates?
+Turn off automatic updates in Settings, both iOS updates (installing and downloading) and security responses & system files.
+
+Download the [Cowabunga IPA](https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa) and install with TrollStore.
+Open and go to Tools > Miscellaneous and turn Supervised *ON*. Open Settings app and change the phones date to December 1st 2023.
+Install the tvOS profile with [this .mobileconfig](https://betaprofiles.dev/dl/block-ota/BlockOTA_17.mobileconfig) and reboot. Disable Supervision from Cowabunga and set the date back to normal.
+
+## Why don't my package managers have any URL schemes?
+URL schemes are currently **disabled** to mitigate jailbreak detection. You will need to manually copy repository URLs and paste them into the package managers yourself.
+
+♡ dleovl
