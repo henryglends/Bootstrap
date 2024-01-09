@@ -36,7 +36,7 @@ You can export sources and tweaks in Sileo, preferences will be saved through un
 
 Disable all apps in AppEnabler, uninstall the bootstrap in the app, install your new `.tipa`, reboot, and bootstrap.
 
-If you updated the Bootstrap before reading this, uninstall from within the app, but make sure to Bootstrap **immediately after**. Refer to this FAQ for proper uninstallation instructions.
+If you updated the Bootstrap before reading this, uninstall from within the app, but make sure to Bootstrap **immediately after**. Refer to this FAQ for proper uninstallation instructions, you'll need to enable (if nothing is enabled) then disable every application you had injected and do a proper uninstall.
 
 ## Why are notifications broken / apps always asking for permissions?
 Check out [issue #2](https://github.com/RootHide/Bootstrap/issues/2), this issue is already known. Disable and enable tweak injection to temporarily fix issue until next reboot.
