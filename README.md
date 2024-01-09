@@ -3,7 +3,7 @@
 If you want something added/revised here, make a pull request or message me on Discord (@dleovl).
 
 DO NOT UPDATE YOUR PHONE NO MATTER WHAT!
-SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on daemons. Refer to the [RootHide Discord server](https://discord.com/invite/scqCkumAYp) for more information regarding the matter (and what you can do to make SpringBoard supported).
+SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on daemons.
 
 Always remember, **DO NOT INSTALL `.tipa` BUILDS FROM OTHER PEOPLE.** You risk installing malicious code since the code used to build the official `.tipa` is open source (meaning anyone could've modified the code to be malicious) and you're potentially installing outdated Bootstrap versions which may not function properly nor will they recieve support.
 Don't run `rm -rf /var/`, it doesn't give you SpringBoard injection.
@@ -55,7 +55,11 @@ Thank you for staying with us.
 # Tweaks
 
 ## How do I get SpringBoard tweaks to work?
-There are tools you can use on top of RootHide Bootstrap for SpringBoard tweaks. You can find more information on the [RootHide Discord server](https://discord.com/invite/scqCkumAYp), in the `#faq` channel.
+Currently, only one unofficial method for SpringBoard injection is available:
+
+- [Serotonin](https://github.com/mineek/Serotonin): A semi-non-ish-jailbreak tool that works on top of RootHide Bootstrap to provide partial support for SpringBoard tweaks
+
+Refer to this FAQ for proper uninstallation instructions (reverting Serotonin / switching from kfdmineek).
 
 ## How do I convert tweaks?
 [Check my fork of the README](https://github.com/dleovl/Bootstrap/blob/main/README.md).
