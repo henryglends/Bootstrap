@@ -34,13 +34,15 @@ For updating between beta versions, you may have to uninstall your bootstrap bef
 
 You can export sources and tweaks in Sileo, preferences will be saved through uninstallation. ([@exact](https://github.com/exact))
 
-Uninstall the bootstrap in the app, install your new `.tipa`, reboot, and bootstrap.
+Disable all apps in AppEnabler, uninstall the bootstrap in the app, install your new `.tipa`, reboot, and bootstrap.
+
+If you updated the Bootstrap before reading this, uninstall from within the app, but make sure to Bootstrap **immediately after**. Refer to this FAQ for proper uninstallation instructions.
 
 ## Why are notifications broken / apps always asking for permissions?
 Check out [issue #2](https://github.com/RootHide/Bootstrap/issues/2), this issue is already known. Disable and enable tweak injection to temporarily fix issue until next reboot.
 
 ## How do I uninstall the Bootstrap?
-If you're uninstalling because of any bugs, let us know in the [GitHub issues](https://github.com/RootHide/Bootstrap/issues).
+If you're uninstalling because of any bugs, let us know in the [GitHub issues](https://github.com/RootHide/Bootstrap/issues). This will revert any SpringBoard injection tools.
 
 You may want to backup your sources and tweaks. You can do this in Sileo by clicking the share button in the top-left corner of both the Sources and Installed tabs. You can copy and paste this list into your Notes app for safe-keeping.
 1. Disable EVERYTHING in AppEnabler.
