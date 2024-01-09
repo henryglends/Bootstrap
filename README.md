@@ -30,13 +30,13 @@ You are using an outdated leaked build. Please refer to this FAQ for proper inst
 It doesn't work well with rootless, please stick to Sileo. You can use whatever package manager you want, but if you have issues with installing packages in Zebra, it's because you're using Zebra. Switch to Sileo.
 
 ## How do I update the Bootstrap?
-For updating between beta versions, you may have to uninstall your bootstrap before updating.
+For updating between major beta versions, you may have to uninstall your bootstrap before updating. This isn't alwaya a requirement for minor version revisions, but ensure you decrypt Bootstrap with [TrollDecryptor](https://github.com/wh1te4ever/TrollDecryptor) if you want to backup your build without cloning a commit.
 
 You can export sources and tweaks in Sileo, preferences will be saved through uninstallation. ([@exact](https://github.com/exact))
 
-Disable all apps in AppEnabler, uninstall the bootstrap in the app, install your new `.tipa`, reboot, and bootstrap.
+Disable everything in AppEnabler, reboot, uninstall the bootstrap in the app, install your new `.tipa`, and bootstrap.
 
-If you updated the Bootstrap before reading this, uninstall from within the app, but make sure to Bootstrap **immediately after**. Refer to this FAQ for proper uninstallation instructions, you'll need to enable (if nothing is enabled) then disable every application you had injected and do a proper uninstall.
+If you updated the Bootstrap before reading this, uninstall from within the app, but make sure to Bootstrap **immediately after**. Refer to this FAQ for proper uninstallation instructions, you'll need to enable (if nothing is enabled) then disable every application you had injected and do a *proper* uninstall. Your injected applications may cease to function if you update the bootstrap while a major revision was made behind the scenes without first disabling them.
 
 ## Why are notifications broken / apps always asking for permissions?
 Check out [issue #2](https://github.com/RootHide/Bootstrap/issues/2), this issue is already known. Disable and enable tweak injection to temporarily fix issue until next reboot.
