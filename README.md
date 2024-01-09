@@ -117,4 +117,8 @@ Install the tvOS profile with [this .mobileconfig](https://betaprofiles.dev/dl/b
 ## Why don't my package managers have any URL schemes?
 URL schemes are currently **disabled** to mitigate jailbreak detection. You will need to manually copy repository URLs and paste them into the package managers yourself.
 
+## How do I enable developer mode?
+
+You can enable developer mode by sideloading any application. You can use [Sideloadly](https://sideloadly.io/), [AltStore](https://altstore.io/), or Xcode to sideload an application.
+
 ♡ dleovl
