@@ -56,7 +56,6 @@ Thank you for staying with us.
 
 ## How do I get SpringBoard tweaks to work?
 Currently, only one unofficial method for SpringBoard injection is available:
-
 - [Serotonin](https://github.com/mineek/Serotonin): A semi-non-ish-jailbreak tool that works on top of RootHide Bootstrap to provide partial support for SpringBoard tweaks
 
 Refer to this FAQ for proper uninstallation instructions (reverting Serotonin / switching from kfdmineek).
@@ -87,7 +86,6 @@ Any tweaks that modify or depend on daemons, the homescreen, lockscreen, control
 
 ## How do I change tweak settings?
 You have two solutions:
-
 1. Enable injection into com.apple.Preferences (please be wary that you are injecting into a system application, do this at your own risk) and install PreferenceLoader along with a tweak that has a preference bundle.
 2. Use TweakSettings by CreatureSurvive on the [CreatureSurvive repository](https://creaturecoding.com/repo/) and respring for it to show up. **This is the safest alternative to people who DO NOT want to inject into system applications.**
 
