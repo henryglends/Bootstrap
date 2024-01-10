@@ -123,4 +123,17 @@ URL schemes are currently **disabled** to mitigate jailbreak detection. You will
 
 You can enable developer mode by sideloading any application. You can use [Sideloadly](https://sideloadly.io/), [AltStore](https://altstore.io/), or Xcode to sideload an application.
 
+## Why are my apps gone / not opening?
+Because of how the bootstrap works, your injected applications may stop working or disappear.
+
+For injected applications, you can either:
+1. Disable injection and respring
+2. Rebuild apps in Bootstrap
+
+For TrollStore apps, you can either:
+1. Refresh app registrations form your persistence helper
+2. Refresh icon cache in TrollStore
+
+Refreshing icon cache in TrollStore will make injected/Sileo installed applications disappear. Rebuild apps from within the Bootstrap app to make them appear again.
+
 ♡ dleovl
