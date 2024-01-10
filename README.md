@@ -136,4 +136,6 @@ For TrollStore apps, you can either:
 
 Refreshing icon cache in TrollStore will make injected/Sileo installed applications disappear. Rebuild apps from within the Bootstrap app to make them appear again.
 
+No `u/iPhone_modder`, you do not need to wipe your phone.
+
 ♡ dleovl
