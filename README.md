@@ -20,7 +20,7 @@ This FAQ `README.md` will be consistently updated along with the [Bootstrap READ
 - [Credits](#credits)
 
 ## Bootstrap
-
+- [Back to Table of Contents](#table-of-contents)
 #### Do I need TrollStore for this bootstrap?
 YES! No TrollStore = Unsupported. No ifs, ands, or buts.
 If you are on a supported version to install TrollStore, use [this guide](https://ios.cfw.guide/installing-trollstore/) to install TrollStore.
@@ -60,7 +60,7 @@ You may want to backup your sources and tweaks. You can do this in Sileo by clic
 Thank you for staying with us.
 
 ## Tweaks
-
+- [Back to Table of Contents](#table-of-contents)
 ### How do I get SpringBoard tweaks to work?
 Currently, only one unofficial method for SpringBoard injection is available:
 - [Serotonin](https://github.com/mineek/Serotonin): A semi-non-ish-jailbreak tool that works on top of roothide Bootstrap to provide partial support for SpringBoard tweaks
@@ -97,7 +97,7 @@ You have two solutions:
 2. Use TweakSettings by CreatureSurvive on the [CreatureSurvive repository](https://creaturecoding.com/repo/) and respring for it to show up. **This is the safest alternative to people who DO NOT want to inject into system applications.**
 
 ## Technical
-
+- [Back to Table of Contents](#table-of-contents)
 ### Why do applications claim I'm still jailbroken?
 Coming from a previous jailbreak, refer to #2 in the uninstallation guide in this FAQ to remove all jailbreak related files in `/var`.
 
@@ -111,7 +111,7 @@ You can report bad applications in [issue #48](https://github.com/roothide/Boots
 JIT by default works with applications specifically made to support JIT provided by TrollStore, but you can enable JIT for outdated applications by using the bootstrap if you don't want to inject with [TrollStoreJitEnabler](https://github.com/Rednick16/TrollStoreJitEnabler). Enabling injection into applications that require JIT with AppEnabler will allow JIT to be utilized.
 
 ## Other
-
+- [Back to Table of Contents](#table-of-contents)
 ### Why don't my apps say 'Open' in the App Store?
 Applications injected in AppEnabler will not show up in the App Store. **DO NOT** click the cloud download button unless you **100%** know what you're doing.
 To get it to say 'Open' again, disable injection in AppEnabler, and refresh icon cache in TrollStore.
@@ -146,6 +146,7 @@ Refreshing icon cache in TrollStore will make injected/Sileo installed applicati
 No `u/iPhone_modder`, you do not need to wipe your phone.
 
 ## Credits
+- [Back to Table of Contents](#table-of-contents)
 Thanks to everyone in the [roothide Discord server](https://discord.com/invite/scqCkumAYp) for making this possible!
 
 ♡ dleovl
