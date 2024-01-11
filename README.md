@@ -123,6 +123,8 @@ Download the [Cowabunga IPA](https://github.com/leminlimez/Cowabunga/releases/do
 Open and go to Tools > Miscellaneous and turn Supervised *ON*. Open Settings app and change the phones date to December 1st 2023.
 Install the tvOS profile with [this .mobileconfig](https://betaprofiles.dev/dl/block-ota/BlockOTA_17.mobileconfig) and reboot. Disable Supervision from Cowabunga and set the date back to normal.
 
+Despite Cowabunga saying your iOS version isn't supported, **this will still work**.
+
 ### Why don't my package managers have any URL schemes?
 URL schemes are currently **disabled** to mitigate jailbreak detection. You will need to manually copy repository URLs and paste them into the package managers yourself.
 
