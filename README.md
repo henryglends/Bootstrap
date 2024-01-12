@@ -130,7 +130,7 @@ URL schemes are currently **disabled** to mitigate jailbreak detection. You will
 
 ### How do I enable developer mode?
 
-You can enable developer mode by sideloading any application. You can use [Sideloadly](https://sideloadly.io/), [AltStore](https://altstore.io/), or Xcode to sideload an application.
+TrollStore versions 2.0.9 and later can enable developer mode for applications that require developer mode. Alternatively, you can enable developer mode by sideloading any application, by using software like [Sideloadly](https://sideloadly.io/), [AltStore](https://altstore.io/), or Xcode.
 
 ### Why are my apps gone / not opening?
 Because of how the bootstrap works, your injected applications may stop working or disappear.
