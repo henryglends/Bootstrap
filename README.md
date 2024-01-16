@@ -149,6 +149,7 @@ No `u/iPhone_modder`, you do not need to wipe your phone.
 
 ## Credits
 - [Back to Table of Contents](#table-of-contents)
+
 Thanks to everyone in the [roothide Discord server](https://discord.com/invite/scqCkumAYp) for making this possible!
 
 ♡ dleovl
