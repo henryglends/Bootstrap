@@ -37,7 +37,7 @@ You are using an outdated leaked build. Please refer to this FAQ for proper inst
 It doesn't work well with rootless, please stick to Sileo. You can use whatever package manager you want, but if you have issues with installing packages in Zebra, it's because you're using Zebra. Switch to Sileo.
 
 ### How do I update the Bootstrap?
-For updating between major beta versions, you may have to uninstall your bootstrap before updating. This isn't alwaya a requirement for minor version revisions, but ensure you decrypt Bootstrap with [TrollDecryptor](https://github.com/wh1te4ever/TrollDecryptor) if you want to backup your build without cloning a commit.
+For updating between major beta versions, you may have to uninstall your bootstrap before updating. This isn't always a requirement for minor version revisions, but ensure you decrypt Bootstrap with [TrollDecryptor](https://github.com/wh1te4ever/TrollDecryptor) if you want to backup your build without cloning a commit.
 
 You can export sources and tweaks in Sileo, preferences will be saved through uninstallation. ([@exact](https://github.com/exact))
 
