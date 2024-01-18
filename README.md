@@ -34,7 +34,7 @@ Currently, Zebra doesn't have the same amount of support Sileo does for the boot
 ### How do I update the Bootstrap?
 For updating between major beta versions, you may have to uninstall your bootstrap before updating. This isn't always a requirement for minor version revisions, but ensure you decrypt Bootstrap with [TrollDecryptor](https://github.com/wh1te4ever/TrollDecryptor) if you want to backup your build without cloning a commit.
 
-You can export sources and tweaks in Sileo, preferences will be saved through uninstallation. ([@exact](https://github.com/exact))
+You can export sources and tweaks in Sileo, most preferences will be saved through uninstallation. ([@exact](https://github.com/exact))
 
 Disable everything in App List, reboot, uninstall the bootstrap in the app, install your new `.tipa`, and bootstrap.
 
