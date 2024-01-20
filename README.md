@@ -7,6 +7,8 @@ If you want something added/revised here, make a pull request or message me on D
 DO NOT UPDATE YOUR PHONE NO MATTER WHAT!
 SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on daemons. Refer to this FAQ for tools you can use that enable SpringBoard support.
 
+**Has this repository helped you out? Give this repo a ⭐️ if so!**
+
 [Join the roothide Discord server](https://discord.com/invite/scqCkumAYp)!
 If you have an issue that isn't listed here, check the [issues](https://github.com/roothide/Bootstrap/issues). If it's still not there, ask in the [roothide Discord server](https://discord.com/invite/scqCkumAYp).
 
@@ -41,7 +43,7 @@ Disable everything in App List, reboot, uninstall the bootstrap in the app, inst
 If you updated the Bootstrap before reading this, uninstall from within the app, but make sure to Bootstrap **immediately after**. Refer to this FAQ for proper uninstallation instructions, you'll need to enable (if nothing is enabled) then disable every application you had injected and do a *proper* uninstall. Your injected applications may cease to function if you update the bootstrap while a major revision was made behind the scenes without first disabling them.
 
 ### Why are notifications broken / apps always asking for permissions?
-Check out [issue #2](https://github.com/roothide/Bootstrap/issues/2), this issue is already known. Disable and enable tweak injection to temporarily fix issue until next reboot.
+Check out [issue #2](https://github.com/roothide/Bootstrap/issues/2), this issue is already known. Disable and enable tweak injection to temporarily fix issue until next reboot. Alternatively, you can use the "Fix App Notification" button in options.
 
 ### How do I uninstall the Bootstrap?
 If you're uninstalling because of any bugs, let us know in the [GitHub issues](https://github.com/roothide/Bootstrap/issues). This will revert any SpringBoard injection tools.
