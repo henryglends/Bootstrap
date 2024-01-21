@@ -7,7 +7,7 @@ If you want something added/revised here, make a pull request or message me on D
 DO NOT UPDATE YOUR PHONE NO MATTER WHAT!
 SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on daemons. Refer to this FAQ for tools you can use that enable SpringBoard support.
 
-**Has this repository helped you out? Give this repo a ⭐️ if so!**
+**Has this repository helped you out? Give [this repo](https://github.com/dleovl/Bootstrap) a ⭐️ if so!**
 
 [Join the roothide Discord server](https://discord.com/invite/scqCkumAYp)!
 If you have an issue that isn't listed here, check the [issues](https://github.com/roothide/Bootstrap/issues). If it's still not there, ask in the [roothide Discord server](https://discord.com/invite/scqCkumAYp).
