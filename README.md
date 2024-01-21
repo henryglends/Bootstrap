@@ -1,6 +1,6 @@
 # roothide Bootstrap FAQ
 
-**Public downloads are officially out!** Grab your `.tipa` [here](https://github.com/roothide/Bootstrap/releases) (and only here)!
+**Public downloads are officially out!** Grab your `.tipa` [here](https://github.com/roothide/Bootstrap/releases) (and only here to avoid malware)!
 
 If you want something added/revised here, make a pull request or message me on Discord (@dleovl).
 
