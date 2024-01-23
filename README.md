@@ -120,10 +120,7 @@ To get it to say 'Open' again, disable injection in App List, and refresh icon c
 ### How do I disable OTA updates?
 Turn off automatic updates in Settings, both iOS updates (installing and downloading) and security responses & system files.
 
-Download the [Cowabunga IPA](https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa) and install with TrollStore.
-Open and go to Tools > Miscellaneous and turn Supervised *ON*. Open Settings app and change the phones date to December 1st 2023. Install the tvOS profile with [this .mobileconfig](https://betaprofiles.dev/dl/block-ota/BlockOTA_17.mobileconfig) and reboot. Disable Supervision from Cowabunga and set the date back to normal.
-
-Despite Cowabunga saying your iOS version isn't supported, **this will still work**.
+Change the date to December 1st 2023. Install the tvOS profile with [this .mobileconfig](https://betaprofiles.dev/dl/block-ota/BlockOTA_17.mobileconfig) and reboot. Set the date back to normal.
 
 ### Why don't my package managers have any URL schemes?
 URL schemes are currently **disabled** to mitigate jailbreak detection. You will need to manually copy repository URLs and paste them into the package managers yourself.
