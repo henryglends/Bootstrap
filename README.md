@@ -118,9 +118,9 @@ Applications injected in App List will not show up in the App Store. **DO NOT** 
 To get it to say 'Open' again, disable injection in App List, and refresh icon cache in TrollStore.
 
 ### How do I disable OTA updates?
-Turn off automatic updates in Settings, both iOS updates (installing and downloading) and security responses & system files.
+Turn off automatic updates in Settings, both iOS updates (installing and downloading) and security responses & system files. Delete any OTA update you have downloaded inside of Settings > General > i(Phone/Pad) Storage.
 
-Change the date to December 1st 2023. Install the tvOS profile with [this .mobileconfig](https://betaprofiles.dev/dl/block-ota/BlockOTA_17.mobileconfig) and reboot. Set the date back to normal.
+Add the [ichitaso](https://ichitaso.com/apt/) repository and install `OTADisabler`. You can view important details about the tweak in its [depiction](https://cydia.ichitaso.com/depiction/otadisabler.html).
 
 ### Why don't my package managers have any URL schemes?
 URL schemes are currently **disabled** to mitigate jailbreak detection. You will need to manually copy repository URLs and paste them into the package managers yourself.
