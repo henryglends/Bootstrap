@@ -120,7 +120,7 @@ To get it to say 'Open' again, disable injection in App List, and refresh icon c
 ### How do I disable OTA updates?
 Turn off automatic updates in Settings, both iOS updates (installing and downloading) and security responses & system files. Delete any OTA update you have downloaded inside of Settings > General > i(Phone/Pad) Storage.
 
-Add the [ichitaso](https://ichitaso.com/apt/) repository and install `OTADisabler`. You can view important details about the tweak in its [depiction](https://cydia.ichitaso.com/depiction/otadisabler.html).
+Install the [OTADisabler app from ichitaso](https://github.com/ichitaso/file/raw/main/OTADisabler_1.0.0.tipa) and disable OTA updates.
 
 ### Why don't my package managers have any URL schemes?
 URL schemes are currently **disabled** to mitigate jailbreak detection. You will need to manually copy repository URLs and paste them into the package managers yourself.
