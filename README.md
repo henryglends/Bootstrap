@@ -30,10 +30,9 @@ Got a Mac and wanna use Xcode? [Use this README](https://github.com/dleovl/Boots
 
 If not, check [here](https://discord.com/channels/1130859165942829106/1130859166488076331/1190488974528106607) for instructions on building with GitHub actions (must be in the [roothide Discord server](https://discord.com/invite/scqCkumAYp), this is also good for getting really crucial information). This `.yml` doesn't automatically update to the latest commit when a new one comes out, so you'll need to sync your fork every time a commit is made (it'll automatically build within 6 minutes). 'Error: Process completed with exit code 8.' means roothide Theos failed to install, manually dispatch the workflow again.
 
-### Why shouldn't I use Zebra?
-Currently, Zebra doesn't have the same amount of support Sileo does for the bootstrap. Most issues that arise with Zebra can be fixed by switching to Sileo. Support for Zebra will need to be manually written.
-
 ### How do I update the Bootstrap?
+**You don't need to do anything** besides rebooting, installing the new `.tipa`, and bootstrapping for **minor revision changes** past public 1.0.
+
 For updating between major beta versions, you may have to uninstall your bootstrap before updating. This isn't always a requirement for minor version revisions, but ensure you decrypt Bootstrap with [TrollDecryptor](https://github.com/wh1te4ever/TrollDecryptor) if you want to backup your build without cloning a commit.
 
 You can export sources and tweaks in Sileo, preferences outside of $(jbroot) should be saved through uninstallation.
@@ -69,13 +68,19 @@ Refer to this FAQ for proper uninstallation instructions (reverting Serotonin / 
 ## Install tweaks
 When installing a tweak, you might see a message saying 'Not Updated'. This tweak will need to be updated to support the roothide Bootstrap.
 
-Install roothide Patcher from *Sileo* (https://roothide.github.io/, refresh sources if it's blank; if you have problems installing roothide Patcher, use Sileo, as Zebra doesn't have the best compatibility for this bootstrap).
+Install roothide Patcher from *Sileo* (https://roothide.github.io/, refresh sources if it's blank).
 
-When attempting to install a tweak, press 'Convert'. In the share sheet, press the Patcher app.
+If you're using Sileo:
+
+- When attempting to install a tweak, press 'Convert'. In the share sheet, press the Patcher app.
+
+If you're using Zebra:
+
+- TBA
 
 When you convert a tweak, you'll need to directly convert simple tweaks for **rootful** tweaks and use the **rootless compat layer** for **rootless** tweaks (install rootless-compat as a dependancy).
 
-Once the tweak is converted, press Ok and press Sileo in the share sheet. Press GET on the tweak and run the queue to install.
+Once the tweak is converted, press Ok and press your package manager from the share sheet. Add the tweak to your queue and run the queue.
 
 ### Cask 3 doesn't save settings!
 Install [this fixed .deb](https://cdn.discordapp.com/attachments/1153426136802529280/1190903773606973470/com.ryannair05.cask3_1.0.2_iphoneos-arm64e.deb) with Sileo (pre-converted) (you may need to be in the [roothide Discord server](https://discord.com/invite/scqCkumAYp) for it to load)
@@ -95,14 +100,14 @@ These are some examples of incompatible tweaks:
 ### How do I change tweak settings?
 You have two solutions:
 1. Enable injection into `com.apple.Preferences` (please be wary that you are injecting into a system application, do this at your own risk) and install PreferenceLoader along with a tweak that has a preference bundle (ex. ShowTouch).
-2. Use TweakSettings by CreatureSurvive on the [CreatureCoding repository](https://creaturecoding.com/repo/) and respring for it to show up. **This is the safest alternative to people who DO NOT want to inject into system applications.**
+2. Use TweakSettings by CreatureSurvive on the [CreatureCoding repository](https://creaturecoding.com/repo/) and respring for it to show up. **This is the safest alternative to people who DO NOT want to inject into system applications. While nothing bad will happen when injection system applications, you may use this as a safe fallback option.**
 
 ## Technical
 - [Back to Table of Contents](#table-of-contents)
 ### Why do applications claim I'm still jailbroken?
 Coming from a previous jailbreak, refer to #2 in the uninstallation guide in this FAQ to remove all jailbreak related files in `/var`.
 
-**Do not install Filza from roothide's repository in Sileo.** If you installed Filza through TrollStore, replace it with the [no URL scheme version](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa).
+**Do not install Filza from roothide's repository in Sileo.** If you installed Filza through TrollStore, replace it with the [no URL scheme version](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa). Make sure you don't have Filza enabled in the App List (unless you benefit from this, please test if injection into Filza helps with detection for you specifically).
 
 If your application still persists, attempt to uninstall it completely (disable injection first) and reinstall from the App Store.
 
