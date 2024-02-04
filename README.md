@@ -68,7 +68,7 @@ Refer to this FAQ for proper uninstallation instructions (reverting Serotonin / 
 ## Install tweaks
 When installing a tweak, you might see a message saying 'Not Updated'. This tweak will need to be updated to support the roothide Bootstrap.
 
-Install roothide Patcher from *Sileo* (https://roothide.github.io/, refresh sources if it's blank).
+Install roothide Patcher (https://roothide.github.io/, refresh sources if it's blank).
 
 If you're using Sileo:
 
