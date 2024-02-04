@@ -72,11 +72,11 @@ Install roothide Patcher from *Sileo* (https://roothide.github.io/, refresh sour
 
 If you're using Sileo:
 
-- When attempting to install a tweak, press 'Convert'. In the share sheet, press the Patcher app.
+- When attempting to install a rootful/rootless tweak, press 'Convert'. In the share sheet, press the Patcher app.
 
 If you're using Zebra:
 
-- TBA
+- Zebra only shows roothide tweaks, so you aren't able to install rootful/rootless tweaks without the deb file. Download the deb of the tweak you want to use (you can use [PostBox](https://postbox.news/) for rootful repos), export the deb to the Patcher, and install with Zebra.
 
 When you convert a tweak, you'll need to directly convert simple tweaks for **rootful** tweaks and use the **rootless compat layer** for **rootless** tweaks (install rootless-compat as a dependancy).
 
